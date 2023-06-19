@@ -91,7 +91,12 @@ const [employees, setEmployees] = useState([{
 
     return(
         <main>
-            
+            {
+            employees.map((employees)=>(
+
+                <p>{employees.fullName}</p>
+            ))
+            }
         </main>
     )
 }
