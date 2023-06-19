@@ -1,7 +1,10 @@
 const Content = () =>{
 
     return(
-        <h1></h1>
+        <main>
+           <h1>Content</h1> 
+        </main>
+        
     )
 }
 
