@@ -96,7 +96,10 @@ const [employees, setEmployees] = useState([{
         <main className="container">
           <div class="row justify-content-center mb-3 mt-3">
             <div class="col-8">
-          
+
+              <div class="card-collection">
+
+              
             {
             employees.map((employees)=>(
               <div id={employees.id} className="card">
@@ -110,6 +113,7 @@ const [employees, setEmployees] = useState([{
            
             ))
             }
+            </div>
             </div>
           </div>
         </main>
