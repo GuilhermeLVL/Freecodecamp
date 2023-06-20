@@ -94,7 +94,7 @@ const [employees, setEmployees] = useState([{
    
     return(
         <main className="container">
-          <div class="row">
+          <div class="row justify-content-center mb-3 mt-3">
             <div class="col-8">
           
             {
