@@ -100,8 +100,11 @@ const [employees, setEmployees] = useState([{
             {
             employees.map((employees)=>(
               <div id={employees.id} className="card">
-                <img src={femaleProfile} alt="" />
+                <img src={femaleProfile} className="card-img-top"/>
 
+                <div className="card-body">
+                  <h5 className="card-title">Full Name: {employees.fullName}</h5>
+                </div>
               </div>
            
             ))
