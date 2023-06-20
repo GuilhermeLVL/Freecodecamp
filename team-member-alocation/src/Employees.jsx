@@ -103,7 +103,13 @@ const [employees, setEmployees] = useState([{
             {
             employees.map((employees)=>(
               <div id={employees.id} className="card m-2" style={{cursor:"pointer"}}>
-                <img src={femaleProfile} className="card-img-top"/>
+
+
+              {
+                
+                (employees.gender === 'female') ? <img src={femaleProfile} className="card-img-top"/> : <img src={maleProfile} className="card-img-top"/>
+                
+              }
 
                 <div className="card-body">
                   <h5 className="card-title">Full Name: {employees.fullName}</h5>
