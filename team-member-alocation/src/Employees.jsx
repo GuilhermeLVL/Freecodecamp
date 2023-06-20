@@ -93,7 +93,7 @@ const [employees, setEmployees] = useState([{
 
    
     return(
-        <main>
+        <main className="container">
           <div class="row">
             <div class="col-8">
           
@@ -104,6 +104,7 @@ const [employees, setEmployees] = useState([{
 
                 <div className="card-body">
                   <h5 className="card-title">Full Name: {employees.fullName}</h5>
+                  <p className="card-text"><b>Desingnation: {employees.designation}</b></p>
                 </div>
               </div>
            
