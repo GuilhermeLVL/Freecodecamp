@@ -91,12 +91,18 @@ const [employees, setEmployees] = useState([{
       }
     ])
 
+   
     return(
         <main>
             {
             employees.map((employees)=>(
-
+              <div>
+                
                 <p>{employees.fullName}</p>
+                
+                <img src={femaleProfile} alt="" />
+                
+                </div>
             ))
             }
         </main>
