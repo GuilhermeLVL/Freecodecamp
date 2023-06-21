@@ -94,8 +94,9 @@ const [employees, setEmployees] = useState([{
    
     return(
         <main className="container">
+
           <div class="row justify-content-center mb-3 mt-3">
-            <div class="col-8">
+            <div class="col-6">
 
               <select>
                 <option value="TeamA">Team A</option>
@@ -106,6 +107,15 @@ const [employees, setEmployees] = useState([{
 
               </div>
             </div>
+
+
+
+
+
+          <div class="row justify-content-center mb-3 mt-3">
+            <div class="col-8">
+
+            
 
               <div class="card-collection">
 
