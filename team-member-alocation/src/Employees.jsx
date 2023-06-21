@@ -101,6 +101,7 @@ const [employees, setEmployees] = useState([{
    function handleEmployeeCardClick (event){
     const tranformedEmployees = employees.map((employee) => employee.id === parseInt(event.currentTarget.id)? (employee.teamName === selectedTeam) ?{...employee, teamName:''}:{...employee, teamName:selectedTeam}:employee)
 
+    setEmployees(tranformedEmployees);
    }
 
 
