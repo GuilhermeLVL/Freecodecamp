@@ -94,11 +94,16 @@ const [employees, setEmployees] = useState([{
     ])
 
     function handleTeamSelectionChange (event){
-
+      console.log(event.target.value)
       setTeam(event.target.value);
     }
 
-   
+   function handleEmployeeCardClick (event){
+    const tranformedEmployees = employees.map((employee) => employee.id === parseInt(event.currentTarget.id)? (employee.teamName === selectedTeam) ?{...employee, teamName:''}:{...employee, teamName:selectedTeam}:employee)
+
+   }
+
+
     return(
         <main className="container">
 
@@ -129,7 +134,7 @@ const [employees, setEmployees] = useState([{
               
             {
             employees.map((employees)=>(
-              <div id={employees.id} className="card m-2" style={{cursor:"pointer"}}>
+              <div id={employees.id} className="card m-2" style={{cursor:"pointer"}} onClick={handleEmployeeCardClick}>
 
 
               {
