@@ -97,6 +97,16 @@ const [employees, setEmployees] = useState([{
           <div class="row justify-content-center mb-3 mt-3">
             <div class="col-8">
 
+              <select>
+                <option value="TeamA">Team A</option>
+                <option value="TeamB">Team B</option>
+                <option value="TeamC">Team C</option>
+                <option value="TeamD">Team D</option>
+              </select>
+
+              </div>
+            </div>
+
               <div class="card-collection">
 
               
