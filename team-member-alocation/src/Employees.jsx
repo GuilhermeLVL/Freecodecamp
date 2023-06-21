@@ -98,7 +98,7 @@ const [employees, setEmployees] = useState([{
           <div class="row justify-content-center mb-3 mt-3">
             <div class="col-6">
 
-              <select>
+              <select className="form-select form-select-lg">
                 <option value="TeamA">Team A</option>
                 <option value="TeamB">Team B</option>
                 <option value="TeamC">Team C</option>
