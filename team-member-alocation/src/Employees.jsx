@@ -135,7 +135,7 @@ const [employees, setEmployees] = useState([{
               
             {
             employees.map((employees)=>(
-              <div id={employees.id} className={(employee.teamName === selectedTeam ? 'card m-2 standaout' : 'card m-2')} style={{cursor:"pointer"}} onClick={handleEmployeeCardClick}>
+              <div id={employees.id} className={(employees.teamName === selectedTeam ? 'card m-2 standaout' : 'card m-2')} style={{cursor:"pointer"}} onClick={handleEmployeeCardClick}>
 
 
               {
