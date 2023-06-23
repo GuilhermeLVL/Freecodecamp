@@ -2,7 +2,7 @@
 import femaleProfile from './images/femaleProfile.jpg'
 import maleProfile from './images/maleProfile.jpg'
 
-const Employeed = () => {
+const Employeed = ({employees, selectedTeam, handleEmployeeCardClick, handleTeamSelectionChange}) => {
 
  
 
