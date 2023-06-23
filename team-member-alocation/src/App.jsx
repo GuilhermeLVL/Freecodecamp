@@ -3,6 +3,7 @@ import './App.css';
 import Employeed from './Employees';
 import Footer from './Footer';
 import Header from './Header';
+import { useState } from "react"
 
 function App() {
 
@@ -111,7 +112,13 @@ function App() {
     <div className="App">
       
       <Header></Header>
-      <Employeed></Employeed>
+      <Employeed 
+      employees ={employees}
+      selectedTeam={selectedTeam}
+      handleEmployeeCardClick={handleEmployeeCardClick}
+      handleTeamSelectionChange={handleTeamSelectionChange}
+
+      ></Employeed>
       <Footer></Footer>
     </div>
   );
