@@ -111,7 +111,9 @@ function App() {
   return (
     <div className="App">
       
-      <Header></Header>
+      <Header selectedTeam={selectedTeam}
+      teamMemberCout={employees.filter((employee) => employee.teamName === selectedTeam).length}
+      ></Header>
       <Employeed 
       employees ={employees}
       selectedTeam={selectedTeam}
