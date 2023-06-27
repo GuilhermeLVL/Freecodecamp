@@ -7,9 +7,9 @@ import { useState, useEffect } from "react"
 
 function App() {
 
-  const [selectedTeam, setTeam] = useState("TeamB")
+  const [selectedTeam, setTeam] = useState(JSON.parse(localStorage.getItem('selectedTeam')) || "TeamB")
 
-  const [employees, setEmployees] = useState([{
+  const [employees, setEmployees] = useState(JSON.parse(localStorage.getItem('employeeList')) || [{
   
           id: 1,
           fullName: "Bob Jones",
